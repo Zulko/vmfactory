@@ -9,4 +9,4 @@ Installation
 
 You can also install it directly from the Python Package Index with this command: ::
 
-    sudo pip vmfactory install
+    (sudo) pip vmfactory install

@@ -553,10 +553,13 @@ class Vmaze(nx.Graph):
                  for e1, e2 in zip(list(self.edges(data=False)),
                                    list(self.edges(data=True)))]
         str_edges = "[\n    %s]"%(",\n    ".join(map(str,edges)))
-        
-        nodes_pos = ["%s : [%.03f, %.03f]"%(str(n), pos[0], pos[1])
+
+        if self.nodes_pos is not None:
+            nodes_pos = ["%s : [%.03f, %.03f]"%(str(n), pos[0], pos[1])
                      for n,pos in self.nodes_pos.items()]
-        str_nodes_pos = "{\n    %s}"%(",\n    ".join(nodes_pos))
+            str_nodes_pos = "{\n    %s}"%(",\n    ".join(nodes_pos))
+        else:
+            str_nodes_pos ="None"
         
         return "{\n  %s}"%(",\n\n  ".join(
                               ["'start': %s"%(str(self.start)),

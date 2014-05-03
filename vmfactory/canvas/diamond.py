@@ -7,9 +7,9 @@ def diamond():
   """
 
   return {
-          'start': None,
+          'start': 0,
 
-          'goal': None,
+          'goal': 13,
 
           'canvas' :[
             (0, 1),

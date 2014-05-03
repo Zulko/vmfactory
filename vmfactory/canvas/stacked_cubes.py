@@ -7,9 +7,9 @@ def stacked_cubes():
 
   return {
   
-  'start': None,
+  'start': 0,
 
-  'goal': None,
+  'goal': 19,
 
   'canvas' :[
     (0, 1),

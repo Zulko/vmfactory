@@ -8,9 +8,9 @@ def star():
   """
 
   return {
-          'start': None,
+          'start': 0,
 
-          'goal': None,
+          'goal': 12,
 
           'canvas' :[
             (0, 2),

@@ -34,4 +34,4 @@ def animate(nframe):
     fig.savefig("_tmp_%02d.jpeg"%nframe)
 
 anim = animation.FuncAnimation(fig, animate, frames=counter)
-anim.save("./test4.gif", fps=.5, writer="imagemagick")
+anim.save("test.gif", fps=.5, writer="imagemagick")
