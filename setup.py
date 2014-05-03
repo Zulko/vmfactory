@@ -11,5 +11,5 @@ setup(name='vmfactory',
     description='',
     long_description=open('README.rst').read(),
     license='see LICENSE.txt',
-    keywords="",
+    keywords="Viennese mazes",
     packages= find_packages(exclude='docs'))

@@ -14,7 +14,7 @@ vmfactory
     <iframe src="http://ghbtns.com/github-btn.html?user=Zulko&repo=vmfactory&type=watch&count=true&size=large"
     allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
 
-Welcome ! The Viennese Maze factory (``vmfactory``) is a Python package for the automatic generation of *Viennese mazes*, which are labyrinth made of streets and traffic lights, like this one:
+Welcome ! The Viennese Maze factory (``vmfactory``) is a Python package for the automatic generation of *Viennese mazes*, which are labyrinths made of streets and traffic lights, like this one:
 
 .. image:: example_maze.jpeg
     :width: 432px
