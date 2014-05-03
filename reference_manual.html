@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Reference manual &mdash; vmfactory 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="vmfactory 0.1.0 documentation" href="index.html" />
+    <link rel="prev" title="Examples of scripts" href="examples_scripts.html" />
+   
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400|Antic+Slab" rel="stylesheet" type="text/css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body>
+  
+  
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="np-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples_scripts.html" title="Examples of scripts"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">vmfactory 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="reference-manual">
+<h1>Reference manual<a class="headerlink" href="#reference-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-vmfactory.canvas">
+<span id="canvas"></span><h2>Canvas<a class="headerlink" href="#module-vmfactory.canvas" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="vmfactory.canvas.diamond">
+<tt class="descclassname">vmfactory.canvas.</tt><tt class="descname">diamond</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.canvas.diamond" title="Permalink to this definition">¶</a></dt>
+<dd><p>A canvas made of losanges reminding stacked cubes.
+To see what it looks like, type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Vmaze</span><span class="p">(</span><span class="o">**</span> <span class="n">diamond</span><span class="p">()</span> <span class="p">)</span><span class="o">.</span><span class="n">draw_quick</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vmfactory.canvas.star">
+<tt class="descclassname">vmfactory.canvas.</tt><tt class="descname">star</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.canvas.star" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>A canvas representing a six-branches star.</dt>
+<dd>Clearly not the best canvas for a Viennese Maze.</dd>
+</dl>
+<p>To see what it looks like, type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Vmaze</span><span class="p">(</span><span class="o">**</span> <span class="n">star</span><span class="p">()</span> <span class="p">)</span><span class="o">.</span><span class="n">draw_quick</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vmfactory.canvas.stacked_cubes">
+<tt class="descclassname">vmfactory.canvas.</tt><tt class="descname">stacked_cubes</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.canvas.stacked_cubes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A canvas made of losanges reminding stacked cubes.
+To see what it looks like, type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Vmaze</span><span class="p">(</span><span class="o">**</span><span class="n">stacked_cubes</span><span class="p">()</span> <span class="p">)</span><span class="o">.</span><span class="n">draw_quick</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vmfactory.canvas.squares_grid">
+<tt class="descclassname">vmfactory.canvas.</tt><tt class="descname">squares_grid</tt><big>(</big><em>x_grid=4</em>, <em>y_grid=4</em><big>)</big><a class="headerlink" href="#vmfactory.canvas.squares_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a canvas mades of a squared grid.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">canvas</span> <span class="o">=</span> <span class="n">squares_canvas</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c"># produces</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">+-+-+-+</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">+-+-+-+</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">+-+-+-+</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span>
+<span class="gp">&gt;&gt;&gt; </span>           <span class="o">+-+-+-+</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">G</span> <span class="o">=</span> <span class="n">Vmaze_NHT</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">goal</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vmfactory.canvas.canvas_editor">
+<tt class="descclassname">vmfactory.canvas.</tt><tt class="descname">canvas_editor</tt><big>(</big><em>grid=True</em>, <em>grid_N=12</em><big>)</big><a class="headerlink" href="#vmfactory.canvas.canvas_editor" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function enables to draw a graph manually using
+Matplotlib&#8217;s interactive plotting capabilites.</p>
+<p>In a first phase you are asked to place the nodes (left-click
+to place a node, right-click to remove the last node, Enter
+when finished).
+In a second phase you are asked to place the edges ( click on
+two nodes to select an edge, remove an edge by selecting it again,
+Enter when finished). To go faster in this phase you can also
+select an edge by clicking just one node and hitting enter, it
+will be assumed that the first node was the last node of the
+previous edge. This enables to rapidly draw &#8220;paths&#8221; of edges.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>grid</strong> :</p>
+<blockquote>
+<div><p>If <cite>True</cite>, the points positions are a posteriori
+projected on a grid for better visual appeal</p>
+</div></blockquote>
+<p><strong>grid_N</strong> :</p>
+<blockquote>
+<div><p>resolution of the grid, if any.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>graph</strong> :</p>
+<blockquote class="last">
+<div><p>A networkx graph object representing the canvas</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vmfactory.canvas</span> <span class="kn">import</span> <span class="n">canvas_editor</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">G</span> <span class="o">=</span> <span class="n">canvas_editor</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vmaze</span> <span class="o">=</span> <span class="n">Vmaze</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">goal</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vmaze</span><span class="o">.</span><span class="n">draw_quick</span><span class="p">()</span> <span class="c"># draw with matplotlib</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">vmaze</span> <span class="c"># print the edges, nodes positions.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vmaze</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s">&#39;mycanvas.can&#39;</span><span class="p">)</span> <span class="c"># save for later use</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="mazes">
+<h2>Mazes<a class="headerlink" href="#mazes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-class">
+<h3>Base class<a class="headerlink" href="#base-class" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="vmfactory.Vmaze">
+<em class="property">class </em><tt class="descclassname">vmfactory.</tt><tt class="descname">Vmaze</tt><big>(</big><em>canvas</em>, <em>start=None</em>, <em>goal=None</em>, <em>nodes_pos=None</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base Class for Viennese Mazes with the necessary
+methods to automatically generate mazes (initialization,
+optimization, drawing).</p>
+<p>Notes that this does not implement states graph and score
+computation.</p>
+<p>Refer to classes Vmaze_NHT and Vmaze_HT for directly
+usable classes.</p>
+<p>For the special class of Viennese Mazes with no half-turns
+(meaning that you cannot pass the same light twice in a row)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>canvas</strong> :</p>
+<blockquote>
+<div><p>A Networkx graph object or a list of edges which form the canvas
+to be colored.</p>
+</div></blockquote>
+<p><strong>start</strong> :</p>
+<blockquote>
+<div><p>Node of the canvas from which the maze starts</p>
+</div></blockquote>
+<p><strong>goal</strong> :</p>
+<blockquote>
+<div><p>Node of the maze that must be reached.</p>
+</div></blockquote>
+<p><strong>nodes_pos</strong> :</p>
+<blockquote class="last">
+<div><p>Position of the nodes when drawing the graph.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># In this example we initialize a maze from a canvas,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># optimize the colors, and generate a report. </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vmfactory</span> <span class="kn">import</span> <span class="n">Vmaze</span><span class="p">,</span> <span class="n">squares_canvas</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">canvas</span> <span class="o">=</span> <span class="n">squares_canvas</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">maze</span> <span class="o">=</span> <span class="n">Vmaze</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">goal</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">maze</span><span class="o">.</span><span class="n">colorize</span><span class="p">(</span> <span class="n">maze</span><span class="o">.</span><span class="n">random_colors</span><span class="p">()</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">maze</span><span class="o">.</span><span class="n">anneal</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span> <span class="c"># optimize the maze</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">maze</span><span class="o">.</span><span class="n">make_report</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<dl class="method">
+<dt id="vmfactory.Vmaze.solve_graph">
+<tt class="descname">solve_graph</tt><big>(</big><em>graph=None</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.solve_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the maze&#8217;s solution as a path in the state graph.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.fancy_solution">
+<tt class="descname">fancy_solution</tt><big>(</big><em>solution</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.fancy_solution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the solution of Vmaze.format_solution() even more
+readable, as a string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.compute_score">
+<tt class="descname">compute_score</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.compute_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes a score for the maze.</p>
+<p>This is an example of scoring function which implements a
+few of my favorite criteria for a good maze:</p>
+<ul class="simple">
+<li>The solution is unique and long.</li>
+<li>There are plenty of loops and bagends.</li>
+<li>Many openings, many false endings which make the maze
+difficult to solve backwards.</li>
+</ul>
+<p>This is all very subjective and incomplete. To grow mazes
+according to other criteria, overwrite this function in a
+subclass of Vmaze.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.colorize">
+<tt class="descname">colorize</tt><big>(</big><em>colors</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.colorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the colors of the maze&#8217;s edges.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.random_colors">
+<tt class="descname">random_colors</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.random_colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a vector of random colors for the maze.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.mutate_colors">
+<tt class="descname">mutate_colors</tt><big>(</big><em>proba_change</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.mutate_colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Randomly changes some colors of the maze, each color
+light having a probability proba_change to be changed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.improve">
+<tt class="descname">improve</tt><big>(</big><em>n=1</em>, <em>proba_change=0.5</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.improve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Improves the maze through random color changes.</p>
+<p>Each traffic light has a probability <tt class="docutils literal"><span class="pre">proba_change</span></tt> of being
+modified to create the new maze. If the new maze has a score
+lower than the current maze it is dumped, otherwise it
+replaces the current maze.</p>
+<p>This procedure is carried over <tt class="docutils literal"><span class="pre">n</span></tt> times.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.anneal">
+<tt class="descname">anneal</tt><big>(</big><em>n</em>, <em>k=10</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.anneal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evolves a maze using annealing (cooldown).</p>
+<p>For each <tt class="docutils literal"><span class="pre">i</span></tt> in <tt class="docutils literal"><span class="pre">0..n-1</span></tt>, the method &#8220;improve()&#8221; will be
+called <tt class="docutils literal"><span class="pre">k</span></tt> times with a probability of mutation
+<tt class="docutils literal"><span class="pre">1.0*(n-i)/n</span></tt>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.draw_quick">
+<tt class="descname">draw_quick</tt><big>(</big><em>ax=None</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.draw_quick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Quick drawing of the maze.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.draw_fancy">
+<tt class="descname">draw_fancy</tt><big>(</big><em>ax=None</em>, <em>draw_lights=True</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.draw_fancy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fancy drawing of the maze.</p>
+<p>Draws the maze with lights in a fancy way, with marks on the
+streets, letters instead of numbers to label the nodes
+(by default), etc... <tt class="docutils literal"><span class="pre">draw_light</span></tt> determines whether a
+circle of the corresponding color is drawn in the middle of
+each edge.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.draw_graph">
+<tt class="descname">draw_graph</tt><big>(</big><em>ax=None</em>, <em>node_size=8</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.draw_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws the state graph of the maze in a fancy way.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.draw_solution">
+<tt class="descname">draw_solution</tt><big>(</big><em>ax, node_size=30, shift=[1, 1], print_solution=False</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.draw_solution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws the solution of the maze in a fancy way.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>ax</strong> :</p>
+<blockquote>
+<div><p>A matplotlib ax</p>
+</div></blockquote>
+<p><strong>node_size</strong> :</p>
+<blockquote>
+<div><p>Size of the nodes, obviously.</p>
+</div></blockquote>
+<p><strong>shift</strong> :</p>
+<blockquote>
+<div><p>Vector (x,y) indicating the direction in which the solution
+line will be slightly shifted when the solution passes
+more than one time by the same node.</p>
+</div></blockquote>
+<p><strong>print_solution</strong> :</p>
+<blockquote class="last">
+<div><p>If true, the solution (sequence of letters designating the
+different nodes, like a-b-g-e-f-m) is written down as the
+title of the ax.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.make_report">
+<tt class="descname">make_report</tt><big>(</big><em>axes=None</em>, <em>figsize=(10</em>, <em>3)</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.make_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a full report of the maze (colors, graph, solution)</p>
+<p>This is not very flexible but practical for quick scripts.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="vmfactory.Vmaze.from_file">
+<em class="property">static </em><tt class="descname">from_file</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a labyrinth from a file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze.to_file">
+<tt class="descname">to_file</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze.to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the labyrinth to a file</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vmaze-ht">
+<h3>Vmaze_HT<a class="headerlink" href="#vmaze-ht" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="vmfactory.Vmaze_HT">
+<em class="property">class </em><tt class="descclassname">vmfactory.</tt><tt class="descname">Vmaze_HT</tt><big>(</big><em>canvas</em>, <em>start=None</em>, <em>goal=None</em>, <em>nodes_pos=None</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze_HT" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Methods</p>
+<dl class="method">
+<dt id="vmfactory.Vmaze_HT.compute_graph">
+<tt class="descname">compute_graph</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.Vmaze_HT.compute_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the states graph of the maze.</p>
+<p>This function is useful to solve and score the maze.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze_HT.format_solution">
+<tt class="descname">format_solution</tt><big>(</big><em>graph_solution</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze_HT.format_solution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the solution of Vmaze.solve() human-readable.</p>
+<p>This function differs in classes Vmaze and Vmaze_NHT.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vmaze-nht">
+<h3>Vmaze_NHT<a class="headerlink" href="#vmaze-nht" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="vmfactory.Vmaze_NHT">
+<em class="property">class </em><tt class="descclassname">vmfactory.</tt><tt class="descname">Vmaze_NHT</tt><big>(</big><em>canvas</em>, <em>start=None</em>, <em>goal=None</em>, <em>nodes_pos=None</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze_NHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>A special class of Viennese Maze in which half-turns are not
+allowed (you cannot go twice in a row through the same traffic
+light).</p>
+<p>See Vmaze for more doc.</p>
+<p class="rubric">Methods</p>
+<dl class="method">
+<dt id="vmfactory.Vmaze_NHT.compute_graph">
+<tt class="descname">compute_graph</tt><big>(</big><big>)</big><a class="headerlink" href="#vmfactory.Vmaze_NHT.compute_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the states maze of the graph.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vmfactory.Vmaze_NHT.solve_rec">
+<tt class="descname">solve_rec</tt><big>(</big><em>solutions_cutoff=None</em><big>)</big><a class="headerlink" href="#vmfactory.Vmaze_NHT.solve_rec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve the maze using a recursive function.</p>
+<p>This is slow (slower than solving using the states graph)
+and not very useful, but it was nice to code.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logo_small.jpeg" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Reference manual</a><ul>
+<li><a class="reference internal" href="#module-vmfactory.canvas">Canvas</a></li>
+<li><a class="reference internal" href="#mazes">Mazes</a><ul>
+<li><a class="reference internal" href="#base-class">Base class</a></li>
+<li><a class="reference internal" href="#vmaze-ht">Vmaze_HT</a></li>
+<li><a class="reference internal" href="#vmaze-nht">Vmaze_NHT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="examples_scripts.html" title="previous chapter">Examples of scripts</a></li>
+  </ul></li>
+</ul>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/reference_manual.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="np-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples_scripts.html" title="Examples of scripts"
+             >previous</a> |</li>
+        <li><a href="index.html">vmfactory 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" style="position:relative">
+      &copy; Copyright 2014, Zulko.
+    </div>
+    <div>
+
+    </div>
+
+  </body>
+</html>
