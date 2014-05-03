@@ -1,5 +1,5 @@
-Zulko's Viennese Maze Factory
-===============================
+The Viennese Maze Factory
+===========================
 
 Welcome ! The Viennese Maze factory (``vmfactory``) is a Python package for the automatic generation of *Viennese mazes*, which are labyrinths made of streets and traffic lights. Here are `some examples <https://i.imgur.com/j2gWurM.jpg>`_ and `their solutions <https://i.imgur.com/bReTSfN.png>`_ .
 
@@ -21,7 +21,7 @@ You can also install it directly from the Python Package Index with this command
 Contribute
 -----------
 
-``vmfactory`` is an open-source software released under the MIT licence. Everyone is welcome to contribute on the Github_ page.
+``vmfactory`` is an open-source software originally written by Zulko and released under the MIT licence. Everyone is welcome to contribute on the Github_ page.
 
 .. _Github : https://github.com/Zulko/vmfactory
 
