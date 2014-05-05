@@ -169,9 +169,9 @@ class Vmaze(nx.Graph):
         # Check that there is one solution exactly
 
         gen = nx.all_simple_paths(graph, self.start, self.goal)
-        gen.next()
+        next(gen)
         try:
-            gen.next()
+            next(gen)
         except StopIteration:
             pass
         else:
@@ -355,7 +355,7 @@ class Vmaze(nx.Graph):
         if draw_lights:
             for e,c in zip(self.edges(),colors):
                 xy1, xy2 = map( np.array, [self.nodes_pos[e[i]]
-                                           for i in 0,1])
+                                           for i in [0,1]])
                 x,y = .5*(xy1 + xy2)
                 ax.plot([x],[y], markersize=10, color=c, marker='o',
                                  markeredgewidth=1.2)
@@ -481,7 +481,7 @@ class Vmaze(nx.Graph):
         
         # position shift for the case where we come back to a node
         
-        n0,n1 = [ self.nodes_pos[self.nodes()[i]] for i in 0,1]
+        n0,n1 = [ self.nodes_pos[self.nodes()[i]] for i in [0,1]]
         delta = np.array(n0)-np.array(n1)
         norm = np.sqrt((delta * delta).sum())
         shift = 1.0*np.array(shift)

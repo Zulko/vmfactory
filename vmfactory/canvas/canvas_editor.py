@@ -73,7 +73,7 @@ def canvas_editor(grid=True, grid_N = 12):
     if grid:
         # project the points on the nearest grid sections
         nodes_pos = [[ticks[np.argmin([abs(u-t) for t in ticks])]
-                      for u in x,y] for x,y in nodes_pos]
+                      for u in (x,y)] for (x,y) in nodes_pos]
     nodes_posx, nodes_posy = zip(*nodes_pos)
     
     nodes = range(len(nodes_pos))
