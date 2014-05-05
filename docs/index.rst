@@ -1,19 +1,6 @@
 vmfactory
 ==============
 
-.. Commented raw:: html
-
-    <a href="https://twitter.com/share" class="twitter-share-button"
-    data-text="MoviePy, script-based video editing" data-size="large" data-hashtags="MoviePy">Tweet
-    </a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-    </script>
-    
-    <iframe src="http://ghbtns.com/github-btn.html?user=Zulko&repo=vmfactory&type=watch&count=true&size=large"
-    allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
-
 Welcome ! The Viennese Maze factory (``vmfactory``) is a Python package for the automatic generation of *Viennese mazes*, which are labyrinths made of streets and traffic lights, like this one:
 
 .. image:: example_maze.jpeg
@@ -56,5 +43,16 @@ Since I didn't find anything similar elsewhere, I assume that Viennese mazes are
         alt="Fork me on GitHub"></a>
 
 
+.. raw:: html
 
+    <a href="https://twitter.com/share" class="twitter-share-button"
+    data-text="MoviePy, script-based video editing" data-size="large" data-hashtags="MoviePy">Tweet
+    </a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+    
+    <iframe src="http://ghbtns.com/github-btn.html?user=Zulko&repo=vmfactory&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
 

@@ -107,7 +107,7 @@ class Vmaze_NHT(Vmaze):
 
 
 if __name__ == '__main__':
-
+    
     edges = [(0, 1), (1, 8), (8, 9), (9, 12), (12, 11),
              (11, 4), (4, 3), (3, 0), (1, 2), (2, 3),
              (3, 5), (5, 11), (11, 10), (10, 9), (9, 7),
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     
     print( G.score )
     sol = G.solve_graph()[0]
-    print sol
+    print( sol )
     print( G.fancy_solution( G.format_solution(sol)) )
 
     

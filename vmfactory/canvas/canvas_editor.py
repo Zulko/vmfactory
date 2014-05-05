@@ -65,7 +65,7 @@ def canvas_editor(grid=True, grid_N = 12):
     
     # 1st STEP
     
-    print "Place the nodes" 
+    print("Place the nodes") 
     init_ax()
     fig.canvas.draw
     nodes_pos = plt.ginput(-1,timeout=-1)
@@ -81,7 +81,7 @@ def canvas_editor(grid=True, grid_N = 12):
     
     # 2nd STEP
     
-    print "Place the edges" 
+    print("Place the edges") 
     fig.canvas.draw()
     edges = []
     
