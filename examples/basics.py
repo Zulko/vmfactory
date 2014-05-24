@@ -8,5 +8,5 @@ canvas = squares_grid(4,4) # nodes will be numbered 0..15
 maze = Vmaze_NHT(canvas, start = 0, goal = 15)
 maze.colorize( maze.random_colors() )
 maze.anneal(400,20) # optimize the maze
-maze.make_report().savefig('myreport.png')
+#maze.make_report().savefig('myreport.png')
 maze.to_file('my_nice_maze.vm')

@@ -19,6 +19,8 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
     
+from .game import Game
+
 
 
 class Vmaze(nx.Graph):
@@ -86,7 +88,7 @@ class Vmaze(nx.Graph):
             self.nodes_pos = None
 
         try:
-            self.colors = [self[n1][n2]['col_num']
+            self.colors = [self[n1][n2]['color_num']
                            for (n1,n2) in self.edges()]
         except:
             self.colorize(  [None for e in self.edges()] )
@@ -122,8 +124,11 @@ class Vmaze(nx.Graph):
 
 
     def fancy_solution(self,solution):
-        """ Makes the solution of Vmaze.format_solution() even more
-            readable, as a string.
+        """
+        
+        Makes the solution of Vmaze.format_solution() even more
+        readable, as a string.
+        
         """
             
         labels = dict(zip(self.nodes(),ascii_lowercase))
@@ -136,7 +141,9 @@ class Vmaze(nx.Graph):
 
 
     def compute_score(self):
-        """ Computes a score for the maze.
+        """
+        
+        Computes a score for the maze.
 
         This is an example of scoring function which implements a
         few of my favorite criteria for a good maze:
@@ -532,7 +539,7 @@ class Vmaze(nx.Graph):
             ax.clear()
         
         axes[0].set_title("Maze")
-        axes[1].set_title("Graph")
+        axes[1].set_title("States Graph")
         axes[2].set_title("Solution")
         self.draw_fancy(ax=axes[0], draw_lights=False)
         self.draw_graph(ax=axes[1], node_size=50)
@@ -541,7 +548,11 @@ class Vmaze(nx.Graph):
         fig.subplots_adjust(wspace=0)
         return fig
 
-    
+    # ===   PLAYING ===============================================
+
+    def play(self, ax=None):
+
+        Game(self, ax=ax).play()
 
     # ===   IMPORT / EXPORT ========================================
     

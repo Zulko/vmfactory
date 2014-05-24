@@ -28,20 +28,22 @@ class Vmaze_NHT(Vmaze):
             
             
         graph_nht = nx.DiGraph()
-        graph_nht.start = self.start
-        graph_nht.goal = self.goal
+        graph_nht.start = (self.start, 0, None)
+        graph_nht.goal = (self.goal,None,None)
         
         for n1,n2 in graph_ht.edges():
             if n2 != graph_ht.goal:
                 for n3 in graph_ht.successors(n2):
                     if n3 == self.goal:
-                        graph_nht.add_edge((n2,n1),self.goal)
+                        graph_nht.add_edge((n2[0],n1,n2[1]),
+                                            graph_nht.goal)
                     elif (n3[0] != n1[0]):
-                        graph_nht.add_edge((n2,n1),(n3,n2))
+                        graph_nht.add_edge((n2[0],n1,n2[1]),
+                                           (n3[0],n2,n3[1]) )
                     
         for n1 in graph_ht.successors(graph_ht.start):
-            graph_nht.add_edge(graph_nht.start,
-                                   (n1,graph_ht.start))
+            graph_nht.add_edge( graph_nht.start,
+                                (n1[0], graph_ht.start, n1[1]))
         
         return graph_nht
 
