@@ -166,7 +166,7 @@ class Vmaze(nx.Graph):
         if len(graph.nodes()) == 0:
             return 0
         
-        shortest = nx.shortest_path(graph, self.start)
+        shortest = nx.shortest_path(graph, graph.start)
         
         # Check that there is only one solution.
         
@@ -175,7 +175,7 @@ class Vmaze(nx.Graph):
         
         # Check that there is one solution exactly
 
-        gen = nx.all_simple_paths(graph, self.start, self.goal)
+        gen = nx.all_simple_paths(graph, graph.start, graph.goal)
         next(gen)
         try:
             next(gen)
@@ -185,8 +185,8 @@ class Vmaze(nx.Graph):
             return 1.0
         
         distances = {n: len(p) for n,p in shortest.items()}
-        path_goal = shortest[self.goal]
-        d_goal = distances[self.goal]
+        path_goal = shortest[graph.goal]
+        d_goal = distances[graph.goal]
         subgraph = nx.subgraph(graph, shortest.keys())
         
         
