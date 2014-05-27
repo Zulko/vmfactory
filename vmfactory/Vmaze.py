@@ -380,15 +380,15 @@ class Vmaze(nx.Graph):
             
         graph = self.compute_graph()
         d = nx.shortest_path(graph, graph.start)
-        p_goal = d[self.goal]
+        p_goal = d[graph.goal]
         d_goal = len(p_goal)
         subgraph = nx.subgraph(graph, d.keys())
         n_levels = max(map(len, d.values()))
 
         nodespos = dict()
         max_nodes_in_level = 0
-        nodes = [self.start]
-        nodespos[self.start] = [-0.5,0]
+        nodes = [graph.start]
+        nodespos[graph.start] = [-0.5,0]
 
         for i in range(1,n_levels+2):
 

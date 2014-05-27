@@ -99,9 +99,7 @@ class Vmaze_NHT(Vmaze):
 
     def format_solution(self, graph_solution):
 
-        return ([graph_solution[0]] +
-                [n[0][0] for n in graph_solution[1:-1]]+
-                [graph_solution[-1]]) 
+        return [ n[0] for n in graph_solution ]
 
 
 

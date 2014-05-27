@@ -116,11 +116,10 @@ class Game:
             return np.sqrt( (x1-x2)**2 + (y1-y2)**2 )
         
         def dist(node):
-            return distance(self.maze.nodes_pos[n], pos)
+            return distance(self.maze.nodes_pos[node], pos)
         
-        l = [n for n in self.maze.nodes() if  dist(n) < self.r_click]
-        
-        return (None if l==[] else l[0])    
+        nodes = self.maze.nodes()
+        return nodes[np.argmin( map(dist, nodes) ) ]
     
         
 
