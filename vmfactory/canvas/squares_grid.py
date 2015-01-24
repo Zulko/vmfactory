@@ -22,7 +22,7 @@ def squares_grid(x_grid=4, y_grid=4):
     """
     dist = lambda n1, n2 : ((n1[0]-n2[0])**2 +
                             (n1[1]-n2[1])**2 )
-    tonum = lambda n: n[0]+4*(3-n[1])
+    tonum = lambda n: n[0]+x_grid*(y_grid - n[1] -1)
 
     nodes_coord = [(i,j) for i in range(x_grid)
                          for j in range(y_grid)]

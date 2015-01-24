@@ -11,6 +11,8 @@ The map indicates the initial colors of the traffic lights in the different stre
 
  Here are `some more mazes <https://i.imgur.com/j2gWurM.jpg>`_ with different shapes, and `their solutions <https://i.imgur.com/bReTSfN.png>`_ .
 
+The package also provides a game where you can interactively solve a few mazes (see `The Viennese Mazes Game`_).
+
 User's Guide
 --------------
 
@@ -19,6 +21,7 @@ User's Guide
 
    installation
    getting_started
+   game
    examples_scripts
    reference_manual
    
