@@ -13,4 +13,4 @@ setup(name='vmfactory',
     license='see LICENSE.txt',
     keywords="Viennese mazes",
     packages= find_packages(exclude='docs'),
-    install_requires= ['numpy', 'matplotlib','networkx'])
+    install_requires= ['numpy', 'matplotlib','networkx', 'proglog'])
